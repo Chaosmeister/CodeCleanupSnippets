@@ -1,4 +1,4 @@
-# CodeCleanupSnippets
+# Code cleanup snippets
 This is a collectionn of snippets to cleanup codebases
 
 
