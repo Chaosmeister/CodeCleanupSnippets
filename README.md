@@ -15,13 +15,15 @@ c++
 This also finds const variable declarations with parentheses definition, so needs manual labor to check results
 
 #### Example:
-`const float f(); // unnecessary const return value`
-`const std::string s(""); // OK - const variable definition`
+```cpp
+const float f(); // unnecessary const return value
+const std::string s(""); // OK - const variable definition
+```
 
 ### Find C-Style casts
 
-`\)\w` // cast is next to variable
-`\) \w` // with-whitespace variant 
+`\)\w` // cast is next to variable  
+`\) \w` // with-whitespace variant
 
 #### Languages:
 c++
@@ -32,4 +34,6 @@ Works surprisingly well but still finds false results and only finds casts where
 The with-whitespace variant returns even more false results.
 
 #### Example:
-`const float f = (float)x; // codesmell`
+```cpp
+const float f = (float)x; // codesmell
+```
