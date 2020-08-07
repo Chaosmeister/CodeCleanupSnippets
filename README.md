@@ -8,6 +8,9 @@ This is a collectionn of snippets to cleanup codebases
 
 `^const [^*&=]*\(`
 
+#### languages
+c++
+
 #### remark:
 also finds const variable declarations with parentheses definition, so needs manual labor to check results
 
